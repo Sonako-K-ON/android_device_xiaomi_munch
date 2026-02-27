@@ -51,3 +51,5 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/munch/munch-vendor.mk)
+# Camera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera/miuicamera.mk)
